@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--FIM-BOOTSTRAP-ICONS-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--FIM CSS-->
+
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
+    <!--FIM JAVASCRIPT-->
+
+    <title>Mundos dos Livros</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <div class="logo"><img src="./imagem/logo.png" alt="logo"></div>
+            <form action="#">
+                <input type="text" name="search" id="search" placeholder="O que vamos ler?" required>
+                <button><i class="bi bi-search"></i></button>
+            </form>
+            <div class="menu-icons">
+                <button><i class="bi bi-star-fill"></i><br><span>Favoritos</span></button>
+                <button><i class="bi bi-person-fill"></i><br><span>Entrar</span></button>
+                <button><i class="bi bi-basket"></i></i><br><span>Minha Cestinha</span></i></button>
+            </div><!--fim menu-icons-->
+        </div><!--fim container-header-->
+        <div class="container-categorias">
+            <button><i class="bi bi-list"></i><span>Categorias</span></button>
+            <button><span>Lançamentos</span></button>
+            <button><span>Pré-Venda</span></button>
+            <button><span>Clássicos</span></button>
+            <button><span>Quadrinhos</span></button>
+            <button><span>Infantil</span></button>
+        </div><!--fim container-categorias-->
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="./imagem/slider-01.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="./imagem/slider-02.jpg" alt="slide 3">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="./imagem/slider-03.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mais-vendidos" id=" mais-vendidos">
+        <div class="container-titulo">
+            <h1 class="titulo"><span>M</span>ais <span>V</span>endidos</h1>
+        </div>
+        <div class="flex">
+            <div class="mais-vendidos-box">
+                <button class="botao-img"><img src="./imagem/turma.jpg" alt="livro-01"></button>
+                <p>Turma da mônica</p>
+                <h2>R$ 30,00 </h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim mais-vendidos-box -->
+            <div class="mais-vendidos-box">
+                <button class="botao-img"><img src="./imagem/pequeno principe.jpg" alt="livro-01"></button>
+                <p>O pequeno principe</p>
+                <h2>R$ 15,00 </h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim mais-vendidos-box -->
+            <div class="mais-vendidos-box">
+                <button class="botao-img"><img src="./imagem/como domar seu gragao.jpg" alt="livro-01"></button>
+                <p>Como domar seu dragão </p>
+                <h2>R$ 29,99</h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim mais-vendidos-box -->
+            <div class="mais-vendidos-box">
+                <button class="botao-img"><img src="./imagem/o homen que amava caixas.jfif" alt="livro-01"></button>
+                <p>O Homen que amava caixas</p>
+                <h2>R$ 39,99 </h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim mais-vendidos-box -->
+        </div><!-- fim flex -->
+    </section><!-- fim mais-vendidos -->
+
+
+
+    <section class="pre-venda" id="pre-venda">
+        <div class="container-titulo">
+            <h1 class="titulo"><span>P</span>ré-<span>V</span>enda</h1>
+        </div>
+        <div class="flex">
+
+
+            <div class="pre-venda-box">
+                <button class="botao-img"><img src="./imagem/o menino maluqinho.jpg" alt="livro-01"></button>
+                <p>O menino maluquinho </p>
+                <h2>R$ 29,99</h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim pre-venda-box -->
+
+
+            <div class="pre-venda-box">
+                <button class="botao-img"><img src="./imagem/txano e oscar.jpg" alt="livro-01"></button>
+                <p>As aventuras de Txano e Oscar</p>
+                <h2>R$ 19,99 </h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim pre-venda-box -->
+
+
+            <div class="pre-venda-box">
+                <button class="botao-img"><img src="./imagem/os bichos me contaram.jpg" alt="livro-01"></button>
+                <p> Os bichos me contaram</p>
+                <h2>R$ 9,99</h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim pre-venda-box -->
+
+
+            <div class="pre-venda-box">
+                <button class="botao-img"><img src="./imagem/pequeno-principe-preto.jpeg" alt="livro-01"></button>
+                <p>O pequeno principe preto </p>
+                <h2>R$ 34,78 </h2>
+                <div class="btn-ver-mais">
+                    <button>
+                        <h2>Ver Mais</h2>
+                    </button>
+                </div>
+            </div><!-- fim pre-venda-box -->
+        </div><!-- fim flex -->
+    </section><!-- fim pre-venda -->
+
+
+    <footer>
+        <div class="footer-container-categorias">
+            <div class="logo"><img src="./imagem/logo.png" alt="logo"></div>
+            <button><span>Quem Somos</span></button>
+            <button><span>Perguntas Frequentes</span></button>
+            <button><span>Política de Privacidade</span></button>
+            <button><span>Termos e Condições</span></button>
+        </div><!--fim container-categorias-->
+    </footer>
+
+</body>
+
+</html>

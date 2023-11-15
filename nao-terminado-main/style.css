@@ -1,0 +1,362 @@
+/* FONT POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* FONT MARCK SCRIPT */
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+/* FONT FREDOKA */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('./imagem/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-ver-mais button {
+    padding: 0px 25px;
+    background-color: rgb(0, 183, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-ver-mais button h2 {
+    margin: 2px;
+    padding: 0px;
+    color: #fff;
+}
+
+/* INICIO HEADER */
+header {
+    background-color: rgb(0, 183, 255);
+    width: 100%;
+}
+
+.container-header {
+    margin: 0 auto;
+    padding: 10px 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #fff;
+    width: 450px;
+}
+
+form input {
+    font-size: 1.2em;
+    border: none;
+    width: 400px;
+    text-align: center;
+}
+
+form button {
+    font-size: 1.2em;
+    height: 30px;
+    width: 30px;
+    color: rgb(0, 183, 255);
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: white;
+    background-color: rgb(0, 183, 255);
+}
+
+.menu-icons button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-icons button:last-child{
+    margin-left: 10px;
+}
+
+.menu-icons button i {
+    font-size: 30px;
+    color: white;
+}
+
+.menu-icons button span {
+    font-size: 10px;
+    color: white;
+}
+
+.container-categorias {
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 164px;
+    background-color: rgb(0, 136, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-categorias button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.container-categorias button i {
+    font-size: 30px;
+    color: white;
+}
+
+.container-categorias button span {
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+/* FIM HEADER */
+
+/* INICIO SLIDER */
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+    max-height: 82%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid rgb(0, 183, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: rgb(0, 183, 255);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: rgb(0, 183, 255);
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+/* INICIO MAIS VENDIDOS */
+
+.mais-vendidos .container-titulo {
+    display: flex;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 0px 164px;
+}
+
+.mais-vendidos .container-titulo .titulo {
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+}
+
+.mais-vendidos .container-titulo .titulo span {
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+    color: rgb(0, 183, 255);
+}
+
+.mais-vendidos .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.mais-vendidos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mais-vendidos-box:hover {
+    border-radius: 20px;
+    transform: scale(1.02);
+    transition: .2s;
+    box-shadow: 0 0 10px rgb(0, 183, 255);
+}
+
+.mais-vendidos-box button {
+    margin: 10px 0;
+}
+
+.mais-vendidos-box .botao-img {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mais-vendidos-box h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 183, 255);
+    margin: 10px 0;
+}
+
+/* INICIO PRE-VENDA */
+
+.pre-venda .container-titulo {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0px 164px;
+}
+
+.pre-venda .container-titulo .titulo {
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+}
+
+.pre-venda .container-titulo .titulo span {
+    font-family: 'Marck Script', cursive;
+    font-size: 100px;
+    color: rgb(0, 183, 255);
+}
+
+.pre-venda .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pre-venda-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pre-venda-box:hover {
+    border-radius: 20px;
+    transform: scale(1.02);
+    transition: .2s;
+    box-shadow: 0 0 10px rgb(0, 183, 255);
+}
+
+.pre-venda-box button {
+    margin: 10px 0;
+}
+
+.pre-venda-box .botao-img {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.pre-venda-box h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 183, 255);
+    margin: 10px 0;
+}
+
+/* INICIO FOOTER */
+footer {
+    background-color: rgb(0, 183, 255);
+}
+
+.footer-container-categorias {
+    display: block;
+}
+
+.footer-container-categorias img {
+    margin-top: 30px;
+    margin-left: 155px;
+}
+
+.footer-container-categorias button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    margin-left: 150px;
+    font-size: 16px;
+}
